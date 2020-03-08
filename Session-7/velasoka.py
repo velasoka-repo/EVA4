@@ -10,6 +10,7 @@ from torch.utils.data import DataLoader
 from torchsummary import summary
 from tqdm import tqdm
 
+SEED = 6
 
 def get_available_device():
     """
@@ -76,6 +77,10 @@ def get_cifar10_data_loader(dataset, batch_size=4):
     :param batch_size:
     :return: CIFAR10 (train, test) data_loader
     """
+    torch.manual_seed(SEED)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(SEED)
+        
     train_data_loader = DataLoader(dataset=dataset[0], batch_size=batch_size, shuffle=True, num_workers=2)
     test_data_loader = DataLoader(dataset=dataset[1], batch_size=batch_size, shuffle=False, num_workers=2)
     return train_data_loader, test_data_loader
