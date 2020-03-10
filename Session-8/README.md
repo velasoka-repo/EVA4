@@ -23,7 +23,7 @@
 ------------
 
 
-2. **ResNet18 without Fully Connected Layer(Linear) ** - existing shared [github code](https://github.com/kuangliu/pytorch-cifar/blob/master/models/resnet.py) is modified to use `Conv2d` instead of `Linear`
+2. **ResNet18 without Fully Connected Layer(Linear)** - existing shared [github code](https://github.com/kuangliu/pytorch-cifar/blob/master/models/resnet.py) is modified to use `Conv2d` instead of `Linear`
 
 ------------
 
