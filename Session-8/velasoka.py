@@ -6,11 +6,14 @@ import torchvision
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
+from torch.optim.lr_scheduler import StepLR
+from torch.optim.lr_scheduler import MultiStepLR
 from torch.utils.data import DataLoader
 from torchsummary import summary
 from tqdm import tqdm
 
 SEED = 6
+
 
 def get_available_device():
     """
@@ -80,7 +83,7 @@ def get_cifar10_data_loader(dataset, batch_size=4):
     torch.manual_seed(SEED)
     if torch.cuda.is_available():
         torch.cuda.manual_seed(SEED)
-        
+
     train_data_loader = DataLoader(dataset=dataset[0], batch_size=batch_size, shuffle=True, num_workers=2)
     test_data_loader = DataLoader(dataset=dataset[1], batch_size=batch_size, shuffle=False, num_workers=2)
     return train_data_loader, test_data_loader
@@ -114,6 +117,26 @@ def get_ce_loss():
     return nn.CrossEntropyLoss()
 
 
+def get_multi_step_lr_schedular(optimizer, milestone=[10, 20], gamma=0.1):
+    """
+    :param optimizer:
+    :param milestone: default value is [10, 20]
+    :param gamma: default value is 0.1
+    :return: MultiStepLR
+    """
+    return MultiStepLR(optimizer=optimizer, milestones=milestone, gamma=gamma)
+
+
+def get_step_lr_schedular(optimizer, step_size=10, gamma=0.1):
+    """
+    :param optimizer:
+    :param step_size: default value is 10
+    :param gamma: default value is 0.1
+    :return:
+    """
+    return StepLR(optimizer=optimizer, step_size=step_size, gamma=gamma)
+
+
 def train_cnn(model, data_loader, loss_fn, optimizer, device):
     """
     model training code with `model.train()` enabled
@@ -144,7 +167,8 @@ def train_cnn(model, data_loader, loss_fn, optimizer, device):
         correct += pred.eq(label.view_as(pred)).sum().item()
         total += len(data)
 
-        pbar.set_description(f"Training Batch={batch_id}, loss={loss.item():.5f}, Correct Prediction={correct}/{total}, Train Accuracy={100 * correct / total:.5f}")
+        pbar.set_description(
+            f"Training Batch={batch_id}, loss={loss.item():.5f}, Correct Prediction={correct}/{total}, Train Accuracy={100 * correct / total:.5f}")
 
 
 def test_cnn(model, data_loader, device):
@@ -167,7 +191,8 @@ def test_cnn(model, data_loader, device):
             pred = output.argmax(dim=1, keepdim=True)
             correct += pred.eq(label.view_as(pred)).sum().item()
             total += len(data)
-            pbar.set_description(f"Test Batch={batch_id}, Correct Validation={correct}/{total}, Test Accuracy={100 * correct / total:.5f}")
+            pbar.set_description(
+                f"Test Batch={batch_id}, Correct Validation={correct}/{total}, Test Accuracy={100 * correct / total:.5f}")
 
 
 def save_model(model, path):
@@ -180,7 +205,7 @@ def save_model(model, path):
     torch.save(model.state_dict(), path)
 
 
-def start_cnn(model, optimizer, loss_fn, data_loader, device, epochs=10):
+def start_cnn(model, optimizer, loss_fn, data_loader, device, epochs=10, schedular=None):
     """
     start CNN with `train` & `test`
     :param model:
@@ -189,12 +214,16 @@ def start_cnn(model, optimizer, loss_fn, data_loader, device, epochs=10):
     :param data_loader: tuple of (train, test) data_loader
     :param device:
     :param epochs:
+    :param schedular:
     """
     model = model.to(device)
-    for epoch in range(1, epochs):
+    for epoch in range(1, epochs + 1):
         print(f"\nEPOCH: {epoch}")
         train_cnn(model, data_loader[0], loss_fn, optimizer, device)
         test_cnn(model, data_loader[1], device)
+
+        if schedular:
+            schedular.step()
 
 
 def get_drive_path(folder, filename):
