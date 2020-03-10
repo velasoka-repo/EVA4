@@ -18,12 +18,12 @@
 
 #### [EVA4-S8.ipynb](https://github.com/velasoka-repo/EVA4/blob/master/Session-8/EVA4_S8.ipynb "EVA4-S8.ipynb")  has 2 models
 
-1. **ResNet18 with Fully Connected Layer** - its just replica of shared [github code] (https://github.com/kuangliu/pytorch-cifar/blob/master/models/resnet.py)
+1. **ResNet18 with Fully Connected Layer** - its just replica of shared [github code](https://github.com/kuangliu/pytorch-cifar/blob/master/models/resnet.py)
 
 ------------
 
 
-2. **ResNet18 without Fully Connected Layer(Linear) ** - existing shared [github code] (https://github.com/kuangliu/pytorch-cifar/blob/master/models/resnet.py) is modified to use `Conv2d` instead of `Linear` just replica of reference [github code] (https://github.com/kuangliu/pytorch-cifar/blob/master/models/resnet.py)
+2. **ResNet18 without Fully Connected Layer(Linear) ** - existing shared [github code](https://github.com/kuangliu/pytorch-cifar/blob/master/models/resnet.py) is modified to use `Conv2d` instead of `Linear`
 
 ------------
 
