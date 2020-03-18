@@ -14,7 +14,7 @@
 
 [velasoka_gradcam.py](https://github.com/velasoka-repo/EVA4/blob/master/Session-9/velasoka_gradcam.py "velasoka_gradcam.py") has all the required gradcam code
 
-[velasoka_model.py](https://github.com/velasoka-repo/EVA4/blob/master/Session-9/velasoka_model.py "velasoka_model.py") has all the required gradcam code
+[velasoka_model.py](https://github.com/velasoka-repo/EVA4/blob/master/Session-9/velasoka_model.py "velasoka_model.py") has all the required ResNet18 code
 
 [EVA4-S9.ipynb](https://github.com/velasoka-repo/EVA4/blob/master/Session-9/EVA4_S9.ipynb "EVA4-S9.ipynb") has the assignment code.
 
