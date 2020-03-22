@@ -39,7 +39,7 @@
 
 1. **Sample Augmentation Images**
 2. **LR Finder & its Graph**
-3. **GradCam heatmap Visualize for CIFAR10 Test Dataset (10 right & wrong image prediction)**
+3. **GradCam heatmap Visualize for CIFAR10 Test Dataset (30 right & wrong image prediction)**
 4. **Model Training with ReduceLROnPlateau & Augmentation Cutout**
 5. **Extra Code to observe the Test Accuracy as per Augmentation**
 
