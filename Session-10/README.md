@@ -41,6 +41,7 @@
 2. **LR Finder & its Graph**
 3. **GradCam heatmap Visualize for CIFAR10 Test Dataset (10 right & wrong image prediction)**
 4. **Model Training with ReduceLROnPlateau & Augmentation Cutout**
+5. **Extra Code to observe the Test Accuracy as per Augmentation**
 
 ------------
 
@@ -59,11 +60,11 @@ Test Batch=2499, Correct Validation=8493/10000, `Test Accuracy=84.93000`: 100%|â
 
 [Google Colab File](https://colab.research.google.com/github/velasoka-repo/EVA4/blob/master/Session-10/EVA4_S9.ipynb)
 
-# Wrongly Predicted Image (GradCam Visualize)
+# 30 Wrongly Predicted Image (GradCam Visualize)
 
 ![1](https://github.com/velasoka-repo/EVA4/blob/master/Session-10/images/wrong-prediction.png)
 
-# Correctly Predicted Image (GradCam Visualize)
+# 30 Correctly Predicted Image (GradCam Visualize)
 
 ![1](https://github.com/velasoka-repo/EVA4/blob/master/Session-10/images/right-prediction.png)
 
