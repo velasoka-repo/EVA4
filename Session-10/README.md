@@ -55,7 +55,7 @@ Trainable params: `11,173,962`
 **EPOCH: 50**
 
 Training Batch=12499, loss=0.00007, Correct Prediction=50000/50000, `Train Accuracy=100.00000`: 100%|██████████| 12500/12500 [03:47<00:00, 55.03it/s]
-  0%|          | 0/2500 [00:00<?, ?it/s]
+
 Test Batch=2499, Correct Validation=8733/10000, `Test Accuracy=87.33000`: 100%|██████████| 2500/2500 [00:22<00:00, 112.85it/s]
 
 [Google Colab File](https://colab.research.google.com/github/velasoka-repo/EVA4/blob/master/Session-10/EVA4_S10.ipynb)
