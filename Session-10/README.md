@@ -41,7 +41,7 @@
 2. **LR Finder & its Graph**
 3. **GradCam heatmap Visualize for CIFAR10 Test Dataset (30 right & wrong image prediction)**
 4. **Model Training with ReduceLROnPlateau & Augmentation Cutout**
-5. **Extra Code to observe the Test Accuracy as per Augmentation**
+5. **Extra Code to observe the Test Accuracy for various Augmentation**
 
 ------------
 
@@ -50,15 +50,15 @@
 Total params: `11,173,962`
 Trainable params: `11,173,962`
 
-### Number of Epochs (only one time it reached 85% Test Accuracy, on next epoch it reduced to 84%)
+### Number of Epochs (It reaches 87.33% Test Accuracy)
 
-**EPOCH: 25**
+**EPOCH: 50**
 
-Training Batch=12499, loss=0.00054, Correct Prediction=49991/50000, `Train Accuracy=99.98200`: 100%|██████████| 12500/12500 [10:35<00:00, 19.67it/s]
+Training Batch=12499, loss=0.00007, Correct Prediction=50000/50000, `Train Accuracy=100.00000`: 100%|██████████| 12500/12500 [03:47<00:00, 55.03it/s]
+  0%|          | 0/2500 [00:00<?, ?it/s]
+Test Batch=2499, Correct Validation=8733/10000, `Test Accuracy=87.33000`: 100%|██████████| 2500/2500 [00:22<00:00, 112.85it/s]
 
-Test Batch=2499, Correct Validation=8493/10000, `Test Accuracy=84.93000`: 100%|██████████| 2500/2500 [00:52<00:00, 48.08it/s]
-
-[Google Colab File](https://colab.research.google.com/github/velasoka-repo/EVA4/blob/master/Session-10/EVA4_S9.ipynb)
+[Google Colab File](https://colab.research.google.com/github/velasoka-repo/EVA4/blob/master/Session-10/EVA4_S10.ipynb)
 
 # 30 Wrongly Predicted Image (GradCam Visualize)
 
