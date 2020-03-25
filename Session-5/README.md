@@ -10,7 +10,7 @@
 
 - - -
 
-### Task-1) Basic CNN Setup
+### Task-1) Basic CNN Setup [EVA4_S5_1.ipynb](https://github.com/velasoka-repo/EVA4/blob/master/Session-5/EVA4_S5_1.ipynb "EVA4-S5_1.ipynb")
 #### Target:
 1. Basic Transforms (ToTensor, Normalize)
 2. Basic Data Loader (Train & Test)
