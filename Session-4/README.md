@@ -17,8 +17,10 @@
 ### Model Summary
 
 ----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
+
+        Layer (type)               Output Shape         Param
+        
+----------------------------------------------------------------
             Conv2d-1           [-1, 10, 28, 28]             100
        BatchNorm2d-2           [-1, 10, 28, 28]              20
          Dropout2d-3           [-1, 10, 28, 28]               0
@@ -39,27 +41,31 @@
            Conv2d-18             [-1, 30, 3, 3]           5,430
       BatchNorm2d-19             [-1, 30, 3, 3]              60
            Conv2d-20             [-1, 10, 1, 1]           2,710
-================================================================
+           
+----------------------------------------------------------------
+
 Total params: 18,430
 Trainable params: 18,430
 Non-trainable params: 0
+
 ----------------------------------------------------------------
 Input size (MB): 0.00
 Forward/backward pass size (MB): 0.58
 Params size (MB): 0.07
 Estimated Total Size (MB): 0.65
+
 ----------------------------------------------------------------
 
 
 #### [EVA4-S4.ipynb](https://github.com/velasoka-repo/EVA4/blob/master/Session-4/EVA4_S4.ipynb "EVA4-S4.ipynb")  has following code
 
-1. **Importing Required Packages**
-2. **ToTensor & Normalize Transformation**
-3. **Train & Test Dataset, Dataloader**
-4. **Model with Batch Normalization & Dropout**
-5. **Model Summary**
-6. **Train & Test Function**
-7. **Result of Model**
+1. Importing Required Packages
+2. ToTensor & Normalize Transformation
+3. Train & Test Dataset, Dataloader
+4. Model with Batch Normalization & Dropout
+5. Model Summary
+6. Train & Test Function
+7. Result of Model
 
 ------------
 
