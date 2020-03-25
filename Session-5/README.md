@@ -18,10 +18,10 @@
 4. Basic Training  & Test Loop
 
 #### Results:
-1. Parameters: 1.6M
+1. Parameters: `1.6M`
 2. Best Training Accuracy: `99.95%`
 3. Best Test Accuracy: `99.26%`
-4. Epochs: 15
+4. Epochs: `15`
 
 #### Analysis:
 1. Simple Model with lots of parameter
@@ -43,10 +43,10 @@
 6. Basic Training  & Test Loop
 
 #### Results:
-1. Parameters: 9.95K
-2. Best Training Accuracy: 99.04% 
-3. Best Test Accuracy: 99.26%
-4. Epochs: 15
+1. Parameters: `9.95K`
+2. Best Training Accuracy: `99.04%`
+3. Best Test Accuracy: `99.26%`
+4. Epochs: `15`
 
 #### *Analysis: BatchNorm after ReLU & Dropout (Best Model)
 1. Achieved Target Parameters `9.95K` which is less than `10K`
