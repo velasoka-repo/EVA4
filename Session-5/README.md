@@ -52,7 +52,7 @@
 1. Achieved Target Parameters `9.95K` which is less than `10K`
 2. Train Accuracy is increasing for each epoch
 3. Test Accuracy is not stable (Accuracy is slightly going UP & DOWN)
-4. Seeing overfitting (Train: `99.04%`, Test: `99.20%`) 
+4. Seeing bit of overfitting (Train: `99.04%`, Test: `99.20%`) 
 5. Batch Normalized increased Test Accuracy a bit
 6. Dropout reduces gap between Train & Test Accuracy (Reduced Overfitting)
 
