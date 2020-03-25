@@ -44,15 +44,15 @@
            
 ----------------------------------------------------------------
 
-Total params: 18,430
-Trainable params: 18,430
-Non-trainable params: 0
+Total params: 18,430    
+Trainable params: 18,430        
+Non-trainable params: 0 
 
 ----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 0.58
-Params size (MB): 0.07
-Estimated Total Size (MB): 0.65
+Input size (MB): 0.00   
+Forward/backward pass size (MB): 0.58   
+Params size (MB): 0.07  
+Estimated Total Size (MB): 0.65 
 
 ----------------------------------------------------------------
 
