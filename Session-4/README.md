@@ -11,7 +11,7 @@
 
 ### File Description
 
-[EVA4-S4.ipynb](https://github.com/velasoka-repo/EVA4/blob/master/Session-9/EVA4_S9.ipynb "EVA4-S9.ipynb") has the assignment code.
+[EVA4-S4.ipynb](https://github.com/velasoka-repo/EVA4/blob/master/Session-4/EVA4_S4.ipynb "EVA4-S4.ipynb") has the assignment code.
 
 
 ### Model Summary
