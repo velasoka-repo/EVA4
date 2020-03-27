@@ -84,7 +84,7 @@ Task 2 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/
 5. **Add GAP Layer** (It reduces Parameter)
 6. **Improve Test Accuracy** (by increase model capacity)
 
-#### Results: (GAP Layer without Dropout)
+#### *Results: (GAP Layer without Dropout)
 1. Parameters: `9,866`
 2. Best Training Accuracy: `99.71%` 
 3. Best Test Accuracy: `99.43%`
@@ -119,18 +119,17 @@ Task 3 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/
 1. Add **Data Augmentation**
 2. Improve Test Accuracy
 
-#### Results: (Net without dropout)
+#### *Results: (Net without dropout)
 1. Parameters: `9,866`
 2. Best Training Accuracy: `99.23%` 
 3. Best Test Accuracy: `99.44%`
 4. Epochs: 15
 
-#### Analysis: (Net without dropout)
+#### *Analysis: (Net without dropout)
 1. Using Augmentation we can achieve `99.44%` accuracy
 2. Train Accuracy is increasing for each epoch
 3. Seems to be good model(Train: `99.23%`, Test: `99.29%`) but Accuracy is not stable (Accuracy is slightly going UP & DOWN 0.5%)
 
-- - -
 
 #### Results: (Net2 with 0.1 dropout)
 1. Parameters: `9,866`
@@ -154,13 +153,13 @@ Task 4 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/
 1. Add **Learning Rate Scheduler**
 2. Maintain Consistent Test Accuracy
 
-#### Results: (`Net` without dropout)
+#### *Results: (`Net` without dropout)
 1. Parameters: `9,866`
 2. Best Training Accuracy: `99.27%` 
 3. Best Test Accuracy: `99.55%`
 4. Epochs: 15
 
-#### Analysis: (`Net` without dropout)
+#### *Analysis: (`Net` without dropout)
 1. Using LR scheduler, can maintain somewhat consistent accuracy `99.5x%` 
 2. Train Accuracy is increasing for each epoch
 3. Seeing bit of underfitting(Train: `99.27%`, Test: `99.54%`)
@@ -186,3 +185,6 @@ Task 5 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/
 ### Final Test Accuracy
 
 ![Test Accuracy](https://github.com/velasoka-repo/EVA4/blob/master/Session-5/images/test-accuracy.png "Test Accuracy")
+
+
+* - Desired Model Result & Analysis
