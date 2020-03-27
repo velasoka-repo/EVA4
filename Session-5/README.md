@@ -145,3 +145,44 @@ Task 3 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/
 4. Seeing bit of underfitting(Train: `99.01%`, Test: `99.42%`)
 
 Task 4 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/blob/master/Session-5/EVA4_S5_4.ipynb)
+
+- - -
+
+### Task-5) CNN with Data Augmentation [EVA4_S5_5.ipynb](https://github.com/velasoka-repo/EVA4/blob/master/Session-5/EVA4_S5_5.ipynb "EVA4-S5_5.ipynb")
+
+#### Target:
+1. Add **Learning Rate Scheduler**
+2. Maintain Consistent Test Accuracy
+
+#### Results: (`Net` without dropout)
+1. Parameters: `9,866`
+2. Best Training Accuracy: `99.27%` 
+3. Best Test Accuracy: `99.55%`
+4. Epochs: 15
+
+#### Analysis: (`Net` without dropout)
+1. Using LR scheduler, can maintain somewhat consistent accuracy `99.5x%` 
+2. Train Accuracy is increasing for each epoch
+3. Seeing bit of underfitting(Train: `99.27%`, Test: `99.54%`)
+4. Achieved required Test Accuracy 
+
+#### Results: (`Net2` with 0.1 dropout)
+1. Parameters: `9,866`
+2. Best Training Accuracy: `99.02%` 
+3. Best Test Accuracy: `99.47%`
+4. Epochs: 15
+
+#### Analysis: (`Net2` with 0.1 dropout)
+1. Using Augmentation we can achieve `99.47%` accuracy
+2. Train Accuracy is increasing for each epoch
+3. Test Accuracy is increasing stable (No DOWN in accuracy)
+4. Seeing bit of underfitting(Train: `99.01%`, Test: `99.47%`)
+5. Achieved required Test Accuracy 
+
+Task 5 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/blob/master/Session-5/EVA4_S5_5.ipynb)
+
+- - -
+
+### Final Test Accuracy
+
+![Test Accuracy](https://github.com/velasoka-repo/EVA4/blob/master/Session-5/images/test-accuracy.png "Test Accuracy")
