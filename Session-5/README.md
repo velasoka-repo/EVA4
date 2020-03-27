@@ -111,3 +111,37 @@ Task 2 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/
 
 Task 3 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/blob/master/Session-5/EVA4_S5_3.ipynb)
 
+- - -
+
+### Task-4) CNN with Data Augmentation [EVA4_S5_4.ipynb](https://github.com/velasoka-repo/EVA4/blob/master/Session-5/EVA4_S5_4.ipynb "EVA4-S5_4.ipynb")
+
+#### Target:
+1. Add **Data Augmentation**
+2. Improve Test Accuracy
+
+#### Results: (Net without dropout)
+1. Parameters: `9,866`
+2. Best Training Accuracy: `99.23%` 
+3. Best Test Accuracy: `99.44%`
+4. Epochs: 15
+
+#### Analysis: (Net without dropout)
+1. Using Augmentation we can achieve `99.44%` accuracy
+2. Train Accuracy is increasing for each epoch
+3. Seems to be good model(Train: `99.23%`, Test: `99.29%`) but Accuracy is not stable (Accuracy is slightly going UP & DOWN 0.5%)
+
+- - -
+
+#### Results: (Net2 with 0.1 dropout)
+1. Parameters: `9,866`
+2. Best Training Accuracy: `99.01%` 
+3. Best Test Accuracy: `99.42%`
+4. Epochs: 15
+
+#### Analysis: (Net2 with 0.1 dropout)
+1. Using Augmentation we can achieve `99.42%` accuracy
+2. Train Accuracy is increasing for each epoch
+3. Test Accuracy is increasing stable (No DOWN in accuracy)
+4. Seeing bit of underfitting(Train: `99.01%`, Test: `99.42%`)
+
+Task 4 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/blob/master/Session-5/EVA4_S5_4.ipynb)
