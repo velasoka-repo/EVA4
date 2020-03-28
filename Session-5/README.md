@@ -184,7 +184,7 @@ Task 5 [Colab Link](https://colab.research.google.com/github/velasoka-repo/EVA4/
 
 ### Final Test Accuracy
 
-![Test Accuracy](https://github.com/velasoka-repo/EVA4/blob/master/Session-5/images/test-accuracy.png "Test Accuracy")
+
 
 
 `*` - Desired Model Result & Analysis
