@@ -45,7 +45,7 @@
 
 ![L2](https://github.com/velasoka-repo/EVA4/blob/master/Session-6/images/l2-model-image.png "l2-model-image.png")
 
-#### L1 & L2 Regularization Test Accuracy
+#### L2 Regularization Test Accuracy
 
 ![L2 Test Accuracy](https://github.com/velasoka-repo/EVA4/blob/master/Session-6/images/l2-model-accuracy.png "l2-model-accuracy.png")
 
