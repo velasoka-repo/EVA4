@@ -1,12 +1,12 @@
 # Session-6 Assignment Task
-1. take your 5th code
-2. run your model for 40 epochs for each:
- 1. without L1/L2
- 2. with L1
- 3. with L2
- 4. with L1 and L2
-3. draw 2 graphs to show the validation accuracy change and loss change. This graph must have proper legends and it should be clear what we are looking at. 
-4. find any 25 misclassified images for L1 and L2 models. You MUST show the actual and predicted class names.
+1. Take Assignment 5 code
+2. Run your model for 40 epochs for each:
+  1. without L1/L2 (Default Assignment 5 code)
+  2. with L1
+  3. with L2
+  4. with L1 and L2
+3. Draw 2 graphs to show the validation accuracy change and loss change. This graph must have proper legends and it should be clear what we are looking at. 
+4. Find any 25 misclassified images for L1 and L2 models. You MUST show the actual and predicted class names.
 
 
 ### File Description
