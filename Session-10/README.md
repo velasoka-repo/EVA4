@@ -68,6 +68,6 @@ Test Batch=2499, Correct Validation=8733/10000, `Test Accuracy=87.33000`: 100%|â
 
 ![1](https://github.com/velasoka-repo/EVA4/blob/master/Session-10/images/right-prediction.png)
 
-# Albumentation Sample Image Augmentation 
+# Various Augmentation Tried to see How Augmentation changes the Image (like flip, blur, scale etc)
 > 
 ![1](https://github.com/velasoka-repo/EVA4/blob/master/Session-10/images/augmentation-sample.png)
