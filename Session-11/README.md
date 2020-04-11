@@ -23,6 +23,16 @@
 
 
 
+#### Train Accuracy
+[Train-Accuracy.png](https://github.com/velasoka-repo/EVA4/blob/master/Session-11/images/Train-Accuracy.png "Train-Accuracy.png")
+
+
+------------
+
+#### TriangleLR curve 
+[triangler.png](https://github.com/velasoka-repo/EVA4/blob/master/Session-11/images/triangler.png "triangler.png")
+
+
 ------------
 
 
