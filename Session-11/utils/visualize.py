@@ -22,13 +22,14 @@ import numpy as np
 
 
 def get_triangler_lr(iteration, step_size, min_lr, max_lr):
+    """Given the inputs, calculates the lr that should be applicable for this iteration"""
     cycle = np.floor(1 + iteration / (2 * step_size))
     x = np.abs(iteration / step_size - 2 * cycle + 1)
     lr = min_lr + (max_lr - min_lr) * np.maximum(0, (1 - x))
     return lr
 
 
-if __name__ == '__main__':
+def show_curve():
     x = []
     for i in range(100):
         t = get_triangler_lr(i, 10, 0.1, 1)
