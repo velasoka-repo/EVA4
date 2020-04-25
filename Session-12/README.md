@@ -37,10 +37,10 @@
 
 
 #### Train Accuracy
-![train-accuracy.png](https://github.com/velasoka-repo/EVA4/blob/master/Session-12/images/train-accuracy.png "train-accuracy.png")
+![train_accuracy.png](https://github.com/velasoka-repo/EVA4/blob/master/Session-12/images/train_accuracy.png "train_accuracy.png")
 
 #### Test Accuracy
-![test-accuracy.png](https://github.com/velasoka-repo/EVA4/blob/master/Session-12/images/test-accuracy.png "test-accuracy.png")
+![test_accuracy.png](https://github.com/velasoka-repo/EVA4/blob/master/Session-12/images/test_accuracy.png "test_accuracy.png")
 
 ------------
 
