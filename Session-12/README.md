@@ -89,9 +89,10 @@ Trainable params: `11,279,112`
 
 ### Number of Epochs (It reaches 29.25% Test Accuracy)
 
-**EPOCH: 47**
+**EPOCH: 45**
 
-Batch: 139, loss: 1.62, Train Accuracy: 62.64 [43849/70000]: 100%|██████████| 140/140 [00:21<00:00,  6.39it/s]
-Batch: 59, Test Accuracy: 29.25: 100%|██████████| 60/60 [00:08<00:00,  7.32it/s]
+Batch: 139, loss: 0.03, `Train Accuracy: 99.33` [69531/70000]: 100%|██████████| 140/140 [03:09<00:00,  1.35s/it]
+Batch: 59, `Test Accuracy: 31.15`: 100%|██████████| 60/60 [00:07<00:00,  7.81it/s]
+
 
 [Google Colab File](https://colab.research.google.com/github/velasoka-repo/EVA4/blob/master/Session-12/EVA4_S12.ipynb)
