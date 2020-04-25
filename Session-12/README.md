@@ -35,6 +35,36 @@
 ## Bounding Box Attribute Description
 [attribute-description.json](https://github.com/velasoka-repo/EVA4/blob/master/Session-12/attribute-description.json "attribute-description.json") has bounding box attribute description
 
+```
+{
+  "_via_img_metadata": {
+    "n02085620_7.jpg8497": {          #image filename with size (filename=n02085620_7.jpg, size=8497)
+      "filename": "n02085620_7.jpg",
+      "size": 8497,
+      "regions": [
+        {
+          "shape_attributes": {
+            "name": "rect",     #used `rect`angle to draw bounding box
+            "x": 71,            #x-distance from left
+            "y": 3,             #y-distance from top
+            "width": 113,       #width of the rectangle from x,y point (horizontal side towards right)
+            "height": 190       #height of the rectangle from x,y point (vertical side towards down)
+          },
+          "region_attributes": {
+            "name": "dog",        #highlighted image name (used bounding box to highlight `dog` regions)(only one name value `dog`)
+            "color": "rgb",       #is it a RGB | grayscale image? (default value `RGB`)
+            "quality": "good",    #quality of the image (default value `good`)
+            "dog_only": "false"   #does image contains other than a dog (default value `false`)
+          }
+        }
+      ],
+      "file_attributes": {
+        
+      }
+    }
+  }
+}
+```
 
 #### Train Accuracy
 ![train_accuracy.png](https://github.com/velasoka-repo/EVA4/blob/master/Session-12/images/train_accuracy.png "train_accuracy.png")
